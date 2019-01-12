@@ -1,0 +1,1 @@
+window.FeedView = require('./feed-view');

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>feed View Test</title>
+
+    <style>
+        #container {
+            height: 300px;
+            overflow: scroll;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <p>One</p>
+        <p>Two</p>
+        <p>Three</p>
+        <p>One</p>
+        <p>Two</p>
+        <p>Three</p>
+        <p>One</p>
+        <p>Two</p>
+        <p>Three</p>
+        <p>One</p>
+        <p>Two</p>
+        <p>Three</p>
+        <p>One</p>
+        <p>Two</p>
+        <p>Three</p>
+        <p>One</p>
+        <p>Two</p>
+        <p>Three</p>
+    </div>
+
+    <script src="../dist/feed-view.min.js"></script>
+    <script>
+        var feedView = new FeedView(document.getElementById('container'));
+
+        setTimeout(() => {
+            for (var i = 0; i < 3; i++) {
+                var neww = document.createElement('p');
+                neww.innerText = i + 4;
+                feedView.container.appendChild(neww);
+                feedView.update();
+            }
+        }, 2000);
+        setTimeout(() => {
+            for (var i = 0; i < 3; i++) {
+                var neww = document.createElement('p');
+                neww.innerText = 'prepended ' + (i + 4);
+                feedView.container.insertBefore(neww, feedView.container.children[3]);
+                feedView.update();
+            }
+        }, 4000);
+    </script>
+</body>
+
+</html>
