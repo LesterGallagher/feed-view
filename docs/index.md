@@ -5,7 +5,7 @@ description: Documentation for the feed-view library
 
 You've created an chat an and you want to add simple chat like scroll behaviour:
 
-[Example chat view](./chat.png)
+![Example chat view](./chat.png)
 
 You can use this simple 1kb module to manage scroll behaviour for you. This module works for any html container that receives new children dynamically. If the scrolled all the way to the bottom, the bottom will stick. When new elements are added on above the current scroll view, this module will maintain the right amount of scroll.
 
@@ -33,3 +33,35 @@ CDN: https://cdn.jsdelivr.net/npm/feed-view/dist/feed-view.min.js
   // "FeedView" is now a global variable
 </script>
 ```
+
+## Usage
+
+```javascript
+var container = document.querySelector('#container'); // the scrolling element
+var feedView = new FeedView(container);
+
+console.log(view.container); // the scrolling element
+console.log(view.sticky); // is the scrolling element currently sticked to the bottom
+```
+
+Everytime you add an element or right after you've added multiple elements, 
+call ".update()" on the feediew instance. This scrolls the scrolling element if nessecary
+and updates the state.
+
+```javascript
+setTimeout(() => {
+  container.appendChild(document.createTextNode('Message 1'));
+  feedView.update();
+}, 1000);
+
+setTimeout(() => {
+  container.appendChild(document.createTextNode('Message 2'));
+container.appendChild(document.createTextNode('Message 3'));
+  feedView.update();
+}, 1000);
+```
+
+
+
+
+
