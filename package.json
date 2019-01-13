@@ -1,8 +1,13 @@
 {
   "name": "feed-view",
   "version": "1.0.0",
-  "description": "",
-  "private": true,
+  "keywords": ["webpack", "chat", "feed", "scroll"],
+  "description": "feed-view provides chat like scroll behaviour. The element's scroll, sticks to the bottom when new elements are added and doesn't jump when new elements are added above the element's scrolltop.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LesterGallagher/feed-view.git"
+  },
+  "homepage": "https://esstudio.site/feed-view",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
@@ -12,9 +17,8 @@
     "webpack-cli": "^3.2.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack"
   },
-  "author": "",
+  "author": "Sem Postma",
   "license": "MIT"
 }
