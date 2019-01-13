@@ -8,7 +8,7 @@ feed-view provides chat like scroll behaviour. The element's scroll, sticks to t
 
 You've created an chat an and you want to add simple chat like scroll behaviour:
 
-![Example chat view](./chat.png)
+![Example chat view](./docs/chat.png)
 
 You can use this simple 1kb module to manage scroll behaviour for you. This module works for any html container that receives new children dynamically. If the scrolled all the way to the bottom, the bottom will stick. When new elements are added on above the current scroll view, this module will maintain the right amount of scroll.
 
