@@ -3,6 +3,12 @@ title: feed-view documentation
 description: Documentation for the feed-view library
 ---
 
+feed-view provides chat like scroll behaviour. The element's scroll, sticks to the bottom when new elements are added and doesn't jump when new elements are added above the element's scrolltop.
+
+[![GitHub license](https://img.shields.io/github/license/LesterGallagher/feed-view.svg)](https://github.com/LesterGallagher/feed-view/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/LesterGallagher/feed-view.svg)](https://github.com/LesterGallagher/feed-view/issues)
+[![Twitter](https://img.shields.io/twitter/url/https/www.npmjs.com/package/feed-view.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Ffeed-view)
+
 You've created an chat an and you want to add simple chat like scroll behaviour:
 
 ![Example chat view](./chat.png)
