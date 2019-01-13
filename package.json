@@ -1,6 +1,6 @@
 {
   "name": "feed-view",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": ["webpack", "chat", "feed", "scroll"],
   "description": "feed-view provides chat like scroll behaviour. The element's scroll, sticks to the bottom when new elements are added and doesn't jump when new elements are added above the element's scrolltop.",
   "repository": {
